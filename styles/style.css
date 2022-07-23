@@ -1,5 +1,4 @@
 .page {
-  border: 1px solid red;
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -165,6 +164,55 @@
 .table__text:not(:last-child) {
   margin-bottom: 20px;
 }
+
+/* styles of feynman-block */
+.feynman {
+  border: 1px solid red;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  min-height: 890px;
+  box-sizing: border-box;
+  padding: 100px 0 0 0;
+}
+.feynman__title {
+  width: 648px;
+  margin: 0 0 70px 0;
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 1.15;
+  text-align: center;
+}
+.feynman__subtitle {
+  width: 500px;
+  margin: 0;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  text-align: center;
+}
+.feynman__link {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  margin: 0;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+}
+.faynman__background-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 867px;
+  height: 637px;
+}
+
+
+
 
 
 .table__cell_theme_dark {
