@@ -6,22 +6,19 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
-
 
 .link {
-  color: #2f80ed;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 .link:hover {
-  text-decoration: underline;
+  transform: scale(120%);
 }
 .link:active {
   color: red;
-  text-decoration: underline;
 }
-
 
 .logo {
   width: 228px;
@@ -31,6 +28,11 @@
   position: absolute;
   left: 64px;
   top: 30px;
+}
+.logo_place_footer {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* header-block styles */
@@ -61,10 +63,14 @@
   font-size: 18px;
   line-height: 25px;
 }
+.header__link {
+  color: #2f80ed;
+}
 .header__main-illustration {
   position: absolute;
   right: 0;
   bottom: 0;
+  object-fit: cover;
   width: 765px;
   height: 608px;
 }
@@ -167,7 +173,6 @@
 
 /* styles of feynman-block */
 .feynman {
-  border: 1px solid red;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -198,6 +203,7 @@
   right: 48px;
   top: 50%;
   margin: 0;
+  color: #2f80ed;
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
@@ -213,7 +219,6 @@
 
 /* styles of kaufman-block */
 .kaufman {
-  border: 1px solid red;
   position: relative;
   z-index: -2;
   overflow: hidden;
@@ -247,3 +252,65 @@
 }
 
 /* styles of footer */
+.footer {
+  display: flex;
+  min-height: 350px;
+  color: white;
+  background-color: #1f1f1f;
+}
+.footer__columns {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 60px auto 40px auto;
+}
+.footer__columns_content_copyright {
+  flex-basis: 711px;
+}
+.footer__author {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 18px 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+.footer__columns_content_info {
+  display: flex;
+  flex-direction: column;
+}
+.footer__columns_content_social {
+  display: flex;
+  flex-direction: column;
+}
+.footer__column-heading {
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+}
+.footer__column-links {
+  display: flex;
+  align-items: center;
+  height: 16px;
+  cursor: pointer;
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  transition: all 0.2s ease;
+}
+.footer__column-links:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer__social-icon {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.footer__column-links:active {
+  color: #2f80ed;
+}
