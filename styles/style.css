@@ -128,7 +128,7 @@
   line-height: 1.15;
   text-align: center;
 }
-.section-title_place_digits {
+.section-title_margin_bottom {
   margin-bottom: 20px;
 }
 .section-subtitle {
@@ -211,13 +211,39 @@
   height: 637px;
 }
 
-
-
-
-
+/* styles of kaufman-block */
+.kaufman {
+  border: 1px solid red;
+  position: relative;
+  z-index: -2;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0;
+  background-color: #1f1f1f;
+}
+.section-title_theme_dark {
+  color: white;
+}
+.section-subtitle_theme_dark {
+  color: white;
+}
+.table_theme_dark {
+  color: white;
+}
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  margin: 80px 0 0 0;
 }
+.kaufman__triangle {
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: -1;
+  width: 877px;
+  height: 877px;
+}
+
+/* styles of footer */
