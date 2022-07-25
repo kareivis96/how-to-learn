@@ -35,7 +35,6 @@
 .header__title {
   margin: 0 0 0 64px;
   width: 730px;
-  height: 100px;
   font-weight: 600;
   font-size: 102px;
   line-height: 96px;
@@ -92,7 +91,7 @@
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 .two-columns {
   display: flex;
@@ -321,9 +320,6 @@
   line-height: 30px;
   text-decoration: none;
   transition: all 0.2s ease;
-}
-.footer__column-link:not(:last-child) {
-  margin-bottom: 10px;
 }
 .footer__social-icon {
   width: 16px;
