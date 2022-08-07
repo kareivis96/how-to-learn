@@ -1,0 +1,19 @@
+.footer__column-link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footer__column-link:hover {
+  transform: scale(120%);
+}
+
+.footer__column-link:active {
+  color: #2f80ed;
+}
