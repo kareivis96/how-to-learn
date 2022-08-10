@@ -12,8 +12,5 @@
 
 .footer__column-link:hover {
   transform: scale(120%);
-}
-
-.footer__column-link:active {
   color: #2f80ed;
 }

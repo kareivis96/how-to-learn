@@ -1,0 +1,8 @@
+.resources__link {
+  transition: all .3s ease;
+}
+
+.resources__link:hover {
+  opacity: 0.8;
+  transform: translateY(-10px);
+}
